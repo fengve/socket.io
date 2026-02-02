@@ -39,6 +39,11 @@ const (
 	DynamicPrivateSubscriptionMode subscriptionMode = "dynamic-private"
 )
 
+const (
+	DefaultShardedChannelPrefix    = "socket.io"
+	DefaultShardedSubscriptionMode = DynamicSubscriptionMode
+)
+
 // DefaultShardedRedisAdapterOptions returns a new ShardedRedisAdapterOptions with default values.
 func DefaultShardedRedisAdapterOptions() *ShardedRedisAdapterOptions {
 	return &ShardedRedisAdapterOptions{}
